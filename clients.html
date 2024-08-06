@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+
+<head>
+    <title>Card Slider HTML and CSS | CodingNepal</title>
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/owl-carousel.css">
+
+    <link rel="stylesheet" href="assets/css/tooplate-artxibition.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <style>
+        /* Importing Google Font - Montserrat */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+
+        }
+
+        .slider-cards {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 20vh;
+            background: url("assets/images/about_bg.jpg") #030728 no-repeat center;
+        }
+
+        .slider-wrapper {
+            overflow: hidden;
+            max-width: 1200px;
+            margin: 30px 70px 55px;
+        }
+
+        .card-list .card-item {
+            height: auto;
+            color: #fff;
+            user-select: none;
+            padding: 35px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            backdrop-filter: blur(30px);
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .card-list .card-item .user-image {
+            width: 250px;
+            height: 250px;
+            padding: 4px;
+        }
+
+        .card-list .card-item .user-profession {
+            font-size: 1.15rem;
+            color: #e3e3e3;
+            font-weight: 500;
+            margin: 14px 0 10px;
+        }
+
+        .slider-wrapper .swiper-pagination-bullet {
+            background: #fff;
+            height: 13px;
+            width: 13px;
+            opacity: 0.5;
+        }
+
+        .slider-wrapper .swiper-pagination-bullet-active {
+            opacity: 1;
+        }
+
+        .slider-wrapper .swiper-slide-button {
+            color: #fff;
+            margin-top: -55px;
+            transition: 0.2s ease;
+        }
+
+        .slider-wrapper .swiper-slide-button:hover {
+            color: #4658ff;
+        }
+
+        @media (max-width: 768px) {
+            .slider-wrapper {
+                margin: 0 10px 40px;
+            }
+
+            .slider-wrapper .swiper-slide-button {
+                display: none;
+            }
+        }
+    </style>
+
+    
+
+</head>
+
+<body style="background-color:  #F7DCB9;">
+
+        <!-- ***** Preloader Start ***** -->
+        <div id="js-preloader" class="js-preloader">
+            <div class="preloader-inner">
+                <span class="dot"></span>
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Preloader End ***** -->
+
+        <!-- ***** Pre HEader ***** -->
+        <div class="pre-header" style="background-color:  #F7DCB9;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6">
+                        <span>Hey! You are welcome.</span>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="text-button">
+                            <a href="contact-us.html">Contact Us Now! <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ***** Header Area Start ***** -->
+        <header class="header-area header-sticky" style="background-color:  #F7DCB9;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="main-nav">
+                            <!-- ***** Logo Start ***** -->
+                            <a href="index.html" class="logo" <em> Baitu</em> </em> <em>Group Ltd</em></a>
+                            <!-- ***** Logo End ***** -->
+                            <!-- ***** Menu Start ***** -->
+                            <ul class="nav">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="contact-us.html">Contact Us</a></li>
+                                <li><a href="shows-events.html">Shows & Events</a></li>
+                                <li><a href="tickets.html" class="active">Our Clients</a></li>
+                            </ul>
+                            <a class='menu-trigger'>
+                                <span>Menu</span>
+                            </a>
+                            <!-- ***** Menu End ***** -->
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="slider-cards">
+            <div class="container swiper">
+                <div class="slider-wrapper">
+                    <div class="card-list swiper-wrapper">
+                        <div class="card-item swiper-slide">
+                            <a href="https://www.mtn.co.ug/">
+                                <img src="assets/images/MTN.png" alt="User Image" class="user-image" />
+                                <p class="user-profession">MTN</p></a>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <a href="https://www.igg.go.ug/">
+                                <img src="assets/images/IG.jpeg" alt="User Image" class="user-image" />
+                            <p class="user-profession">Inspectorate of Government</p>
+                            </a>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <a href="https://www.ugandabreweries.com/">
+                                <img src="assets/images/uganda.jpeg" alt="User Image" class="user-image" />
+                            <p class="user-profession">Uganda Breweries Limited</p>
+                            </a>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <a href="https://www.pridemicrofinance.co.ug/">
+                                <img src="assets/images/pride.png" alt="User Image" class="user-image" />
+                                <p class="user-profession">Pride Microfinance</p></a>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <a href="https://www.devex.com/organizations/uganda-health-marketing-group-uhmg-122044">
+                                <img src="assets/images/UHMG.jpeg" alt="User Image" class="user-image" />
+                                <p class="user-profession">UHMG</p></a>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <a href="https://www.airtel.co.ug/" class="card-link">
+                                <img src="assets/images/airtel.jpeg" alt="User Image" class="user-image" />
+                                <p class="user-profession">Airtel Uganda</p>
+                            </a>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+        
+                                <a href="https://kakirasugar.com/"><img src="assets/images/kakira.jpeg" alt="User Image" class="user-image" />
+                                    <p class="user-profession">Kakira Distillery Limited</p></a>
+                            
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <a href="https://www.ec.or.ug/">
+                                <img src="assets/images/EC.jpeg"alt="User Image" class="user-image" />
+                            <p class="user-profession">The Electoral Commission of Uganda</p>
+                            </a>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                           <a href="https://www.giz.de/en/worldwide/310.html">
+                            <img src="assets/images/giz.jpeg" alt="User Image" class="user-image" />
+                            <p class="user-profession">GIZ</p>
+                           </a>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <a href="https://ura.go.ug/en/">
+                                <img src="assets/images/ura2.jpeg" alt="User Image" class="user-image" />
+                            <p class="user-profession">Uganda Revenue Authority</p>
+                            </a>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <a href="https://www.fhi360.org/countries/uganda/">
+                                <img src="assets/images/fhi.png" alt="Image" class="user-image" />
+                            <p class="user-profession">FHI 360</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    <div class="row">
+    </div>
+
+        <!-- *** Subscribe *** -->
+        <div class="subscribe">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Subscribe to Our Page:</h4>
+                    </div>
+                    <div class="col-lg-8">
+                        <form id="subscribe" action="" method="get">
+                            <div class="row">
+                                <div class="col-lg-9">
+                                    <fieldset>
+                                        <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*"
+                                            placeholder="Your Email Address" required="" />
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-3">
+                                    <fieldset>
+                                        <button type="submit" id="form-submit" class="main-dark-button">
+                                            Submit
+                                        </button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- *** Footer *** -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="address">
+                            <h4>Baitu Group Ltd</h4>
+                            <span>9J28+HR9, <br>Kakungulu Rd,<br>Kampala, Uganda</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="links">
+                            <h4>Useful Links</h4>
+                            <ul>
+                                <li><a href="about.html">Info</a></li>
+                                <li><a href="#">Location</a></li>
+                                <li><a href="shows-events.html">Events</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="hours">
+                            <h4>Open Hours</h4>
+                            <ul>
+                                <li>Mon to Fri: 8:00 AM to 5:00 PM</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="under-footer">
+                            <!-- <div class="row">
+                                <div class="col-lg-6">
+                                    <p>São Conrado, Rio de Janeiro</p>
+                                </div> -->
+                                <div class="col-lg-6">
+                                    <p class="copyright">&copy; <script>document.write(new Date().getFullYear()); </script> Baitu Group Ltd</p>
+                        
+                                    <!-- <br>Design: <a rel="nofollow" href="https://www.tooplate.com" target="_parent">Tooplate</a></p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="sub-footer">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="logo"><span><em style="color: #fcb001;">Baitu</em> <em>Group Ltd</em></span></div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu">
+                                        <ul>
+                                            <li><a href="index.html" class="active">Home</a></li>
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="contact-us.html">Contact Us</a></li>
+                                            <li><a href="shows-events.html">Shows & Events</a></li> 
+                                            <li><a href="clients.html">Our Clients</a></li> 
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="social-links">
+                                        <ul>
+                                            <li>
+                                                <a href="https://x.com/home"><i class="fa fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.facebook.com/BMAPALIMITED?mibextid=e8SNworyyy6rbT9t"><i class="fa fa-facebook"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.tiktok.com/@baitu.group.ltd?_t=8o7tnpILrkr&_r=1"><i class="fa fa-tiktok"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.instagram.com/baitu_group_ltd?igsh=N2dhNDVyZmJhcGRr&utm_source=qr"><i class="fa fa-instagram"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- jQuery -->
+        <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+        <!-- Bootstrap -->
+        <script src="assets/js/popper.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+
+        <!-- Plugins -->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        <script src="assets/js/waypoints.min.js"></script>
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <script src="assets/js/imgfix.min.js"></script>
+        <script src="assets/js/mixitup.js"></script>
+        <script src="assets/js/accordions.js"></script>
+        <script src="assets/js/owl-carousel.js"></script>
+
+        <!-- Global Init -->
+        <script src="assets/js/custom.js"></script>
+    </div>
+    <!-- Linking SwiperJS script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Linking custom script -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
